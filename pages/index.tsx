@@ -23,7 +23,7 @@ export const getServerSideProps: GetServerSideProps =
     let session = await getSession(ctx);
     console.log("session got here =>", session);
     if (session) {
-      // store.dispatch(userSuccess(session));
+      store.dispatch(userSuccess(session));
     } else {
       return {
         props: {},

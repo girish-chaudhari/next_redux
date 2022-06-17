@@ -27,7 +27,7 @@ const Header: React.FC = () => {
 
   useEffect(() => {
     if (session) {
-      dispatch(userSuccess(session.user));
+      // dispatch(userSuccess(session.user));
       console.log("session data =>", session.user);
     }
   }, [session]);
